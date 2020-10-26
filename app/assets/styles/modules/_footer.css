@@ -1,0 +1,20 @@
+.footer {
+    
+    
+    margin-bottom: 8rem;
+    
+    &__headline {
+        padding-top: 3rem;
+        width: 90%;
+        margin: auto;
+        color: $headerColor;
+        font-size: 6rem;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    &__button {
+        margin: auto;
+        text-align: center;
+    }
+}

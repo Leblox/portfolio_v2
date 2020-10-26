@@ -1,0 +1,17 @@
+.section {
+    margin: 20rem auto;
+    
+    &__title {
+        font-family: 'Playfair Display', serif;
+        color: $headerColor;
+        font-size: 2rem;
+        
+        margin-bottom: 1.5rem;
+
+    }
+
+    &__text {
+        line-height: 140%;
+        margin-bottom: 1rem;
+    }
+}

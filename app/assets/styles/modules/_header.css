@@ -1,0 +1,20 @@
+.header {
+    font-family: 'Playfair Display', serif;
+    height: 100vh;
+    background-color: $headerColor;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    &__title {
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: 140%;
+    }
+
+    &__border {
+        margin-bottom: 2rem;
+    }
+}
+
+
