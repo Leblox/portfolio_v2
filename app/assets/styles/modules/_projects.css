@@ -1,34 +1,106 @@
 .projects {
-
     &__header {
         text-align: center;
+        margin-bottom: 4rem;
     }
+
+    /* Each project is a grid, with a flexbox inside the texbox */
 
     &__item {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 1fr;
+
+        margin-bottom: 15rem;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
 
     }
 
-    &__photo-box {
-        flex: 0 1 auto;
-        height:360px;
-        width: 50%;
-        background-color: rgb(185, 82, 82);
+    &__photo-area {
+        grid-column: 1 / 8;
+        grid-row: 1;
+
+        &--opposite {
+            grid-column: 6 / 13;
+        }
+        
+        & img {
+            width: 100%;
+            height: auto;
+            opacity: 0.3;
+            transition: opacity 0.5s, transform 0.5s;
+        }
+        
+        & img:hover {
+            opacity: 1;
+            transform: scale(0.95);
+
+            cursor: pointer;
+        }
     }
 
-    &__text-box {
-        flex: 0 1 auto;
+    &__text-area {
+        grid-column: 7 / 13;
+        grid-row: 1;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        
+        &--opposite {
+            grid-column: 1 / 7;
+            align-items: flex-start;
+        }
+        
+        & > * {
+            z-index: 10; 
+        }
+        
     }
 
     &__title {
         font-family: 'Playfair Display', serif;
         color: $headerColor;
-        font-size: 2rem;
+        font-size: 1.7rem;
         text-align: right;
+        cursor: pointer;
+        
     }
 
-    &__text {
-        background-color: yellow;
+    &__text-box {
+        background-color: rgb(241, 240, 240);
+        border-radius: 8px;
+        padding: 1.5rem;  
         
+        text-align: right;
+        margin: 0;
+
+        &--opposite {
+            text-align: left;
+        }
+    }
+    
+    &__tech {
+        margin: 1rem 0;
+        font-weight: 300;
+        font-size: 0.9rem;
+        list-style: none;
         
+        & li {
+            display: inline-block;
+
+            &:first-of-type {
+                margin-right: 2rem;
+            }
+        }
+    }
+
+    &__button {
+        float: right;
+        margin-top: 1rem;
     }
 }
