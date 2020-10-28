@@ -1,4 +1,6 @@
 .projects {
+    margin-bottom: 10rem;
+
     &__header {
         text-align: center;
         margin-bottom: 4rem;

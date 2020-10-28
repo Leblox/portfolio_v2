@@ -1,8 +1,8 @@
 .more-projects {
     display: block;
     
-    justify-content: center;
-    align-items: flex-start;
+    margin-top: 2rem;
+    margin-bottom: 7rem;
 
     &__title {
         flex: 0 1 auto;
