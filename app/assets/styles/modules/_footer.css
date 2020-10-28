@@ -1,8 +1,6 @@
 .footer {
-    
-    
-    margin-bottom: 8rem;
-    
+    flex-direction: column;
+
     &__headline {
         padding-top: 3rem;
         width: 90%;
@@ -13,8 +11,47 @@
         text-align: center;
     }
 
+    &__button-wrapper {
+        margin-top: 2rem;
+    }
     &__button {
         margin: auto;
         text-align: center;
+    }
+
+    &__links {
+        opacity: 0.3;
+        border-top: 2px solid $headerColor;
+        margin-top: 2rem;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        height: 80px; 
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    &__social {
+        margin-top: 1rem;
+        list-style: none;
+        float: right;
+        color: $headerColor;
+        
+        & a {
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        & li {
+            display: inline-block;
+            margin-right: 2rem;
+            transition: scale 0.5s;
+    
+            &:hover {
+                transform: scale(1.5);
+            }
+        }
+        
     }
 }
