@@ -1,5 +1,6 @@
 .footer {
     flex-direction: column;
+    margin-bottom: 8rem;
 
     &__headline {
         padding-top: 3rem;
@@ -23,10 +24,8 @@
         opacity: 0.3;
         border-top: 2px solid $headerColor;
         margin-top: 2rem;
-        margin-bottom: 0;
-        padding-bottom: 0;
-        height: 80px; 
 
+        height: 80px; 
         &:hover {
             opacity: 1;
         }
@@ -47,10 +46,13 @@
             display: inline-block;
             margin-right: 2rem;
             transition: scale 0.5s;
-    
+            
+            /*
             &:hover {
-                transform: scale(1.5);
+                transform: scale(1.2);
             }
+            
+            */
         }
         
     }

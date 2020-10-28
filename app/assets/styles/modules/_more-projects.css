@@ -1,0 +1,96 @@
+.more-projects {
+    display: block;
+    
+    justify-content: center;
+    align-items: flex-start;
+
+    &__title {
+        flex: 0 1 auto;
+        text-align: center;
+        
+        &-text {
+            display: inline-block;
+            margin-top: 0;
+        }
+
+        &-button {
+            display: inline-block;
+            font-size: 2.5rem;
+            vertical-align: middle;
+            margin: 0 0 0 1rem;
+            cursor: pointer;
+    
+            & :hover {
+                color: white;
+                background-color: $headerColor;
+            }
+        }
+    }
+
+    &__project-list {
+        display: block;     
+        
+
+        &__item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 4rem;
+
+            &:first-of-type {
+                margin-top: 3rem;
+            }
+        }
+
+        &__image {
+            flex: 0 1 auto;
+            margin-right: 5rem;
+
+            height: 150px;
+            width: auto;
+            background-color: $headerColor;
+        }
+
+        &__textbox {
+            flex: 0 1 auto;
+        }
+
+        &__title {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin: 0;
+            float: left;
+            display: inline-block;
+        }
+        
+        &__link {
+            display: inline-block;
+            font-size: 140%;
+            vertical-align: middle;
+            
+            margin-left: 2rem;
+            color: $headerColor;
+            
+        }
+
+        &__description {
+            font-size: 90%;
+            margin: 1.5rem 0;
+        }
+
+        &__tech {
+            list-style: none;
+            margin: 0;
+
+            & li {
+                font-size: 80%;
+                font-weight: 800;
+                display: inline-block;
+                border: 1px solid $headerColor;
+                color: $headerColor;
+                padding: 7px 10px;
+                margin-right: 1rem;
+            }
+        }
+    }
+}

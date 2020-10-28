@@ -4,6 +4,8 @@
     padding: 0;
 }
 
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -14,6 +16,7 @@ body {
     /* font-family: 'Playfair Display', serif; */
     font-family: 'Raleway', sans-serif;
     overflow-x: hidden;
+   
 
 }
 

@@ -14,7 +14,9 @@
 
     &__border {
         margin-bottom: 2rem;
+        
+        &_filter {
+            fill: $headerColor;
+        }
     }
 }
-
-

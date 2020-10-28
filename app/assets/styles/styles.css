@@ -9,6 +9,9 @@
 @import "modules/_section";
 @import "modules/_header";
 @import "modules/_about";
+@import "modules/_skills";
 @import "modules/_projects";
+@import "modules/_more-projects";
 @import "modules/_footer";
+@import "modules/_go-to-top";
 @import "modules/_card";

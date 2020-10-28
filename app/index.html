@@ -4,6 +4,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
 
         <title>Leblox.io /// Lena - Front-End Developer Portfolio</title>
     </head>
@@ -13,24 +14,57 @@
                 A design-minded front-end developer,<br> focused on building beautiful websites, interfaces and experiences.
             </div>
         </header>
-        <div class="header__border"><img src="assets/images/wave2.svg" alt="Wavy border"></div>
+        <div class="header__border">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path class="header__border_filter" fill-opacity="1" d="M0,160L26.7,154.7C53.3,149,107,139,160,117.3C213.3,96,267,64,320,64C373.3,64,427,96,480,117.3C533.3,139,587,149,640,128C693.3,107,747,53,800,37.3C853.3,21,907,43,960,48C1013.3,53,1067,43,1120,53.3C1173.3,64,1227,96,1280,90.7C1333.3,85,1387,43,1413,21.3L1440,0L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z">
+                </path>
+            </svg>
+        </div>
         
         <section class="wrapper section flexbox about">
             <div class="about__image">
-                <img>
+                <h2 class="section__title">Who am I?</h2>
             </div>
             <div class="about__text-box">
-                <h2 class="section__title">Who am I?</h2>
                 <p class="section__text"> Originally from Sweden, I have spent over a decade managing small, luxury boutique hotels in sunny London before turning towards coding and web development.</p>
                 <p class="section__text">I have always actively saught out and introduced new technology to help improve profitability and efficiency in the properties I managed. I have always been amazed at the elegant problem solving that a good technology can provide. But after many years as the "client", I have also often been frustrated by poor design and the seemingly illogical "road-maps" of my favourite technology partners.</p>
                 <p class="section__text">I love drinking tea from fancy cups and single-origin dark chocolate.</p>
                 <p class="section__text">TL;DR Swedish, used to manage luxury hotels, now practice the dark arts of web development. </p>
             </div>
-
         </section>
 
-        <section class="wrapper section">
-            <h1 class="section__title">I work with...</h1>
+        <section class="wrapper section flexbox skills">
+                <div class="skills__flexchild">
+                    <h2 class="section__title">I work with...</h2>
+                </div>
+                
+                <div class="skills__flexchild">
+                    <ul class="section__text skills__list">
+                        <li>HTML5 & CSS3</li>
+                        <li>Javascript (ES5 & ES6+)</li>
+                        <li>Version control (git & GitHub)</li>
+                        <li>Package management (npm and pip)</li>
+                        <li>Webpack</li>
+                    </ul>
+                </div>
+                <div class="skills__flexchild">
+                    <ul class="section__text skills__list">
+                        <li>Node.JS</li>
+                        <li>jQuery</li>
+                        <li>Lodash</li>
+                        <li>Autoprefixer</li>
+                        <li>SCSS</li>
+                        <li>PostCSS</li>
+                    </ul>
+                </div>
+                <div class="skills__flexchild">
+                    <ul class="section__text skills__list">
+                        <li>C#</li>
+                        <li>Python 3</li>
+                        <li>Flask</li>
+                        <li>mySQL</li>
+                    </ul>
+                </div>
         </section>
         
         <section class="wrapper section projects">
@@ -75,12 +109,68 @@
             </div>
         </section>
 
-        <section class="wrapper section">
-            <h1 class="section__title">More projects</h1>
-            <div class=""></div>
+        <section class="wrapper section more-projects">
+            <div class="more-projects__title">
+                <h1 class="section__title more-projects__title-text">More projects</h1>
+                <div class="more-projects__title-button section__title">
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>
+            </div>
+            <div class="more-projects__project-list">
+                <div class="more-projects__project-list__item">
+                    <img class="more-projects__project-list__image" src="assets/images/screenshot-test.png">
+                    <div class="more-projects__project-list__textbox">
+                        <span>
+                            <h2 class="projects__title more-projects__project-list__title">Hillside Estates</h2> 
+                            <a class="more-projects__project-list__link" href="#"><ion-icon name="arrow-forward-sharp"></ion-icon></a>
+                        </span>
+                        <p class="section__text more-projects__project-list__description">This was a simple app to make sure that I eat chocolates on time.</p>
+                        <ul class="projects__tech">
+                            <li>Javascript</li>
+                            <li>CSS</li>
+                            <li>HTML</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="more-projects__project-list__item">
+                    <img class="more-projects__project-list__image" src="assets/images/screenshot-test.png">
+                    <div class="more-projects__project-list__textbox">
+                        <span>
+                            <h2 class="projects__title more-projects__project-list__title">Hillside Estates</h2> 
+                            <a class="more-projects__project-list__link" href="#"><ion-icon name="arrow-forward-sharp"></ion-icon></a>
+                        </span>
+                        <p class="section__text more-projects__project-list__description">This was a simple app to make sure that I eat chocolates on time.</p>
+                        <ul class="projects__tech">
+                            <li>Javascript</li>
+                            <li>CSS</li>
+                            <li>HTML</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="more-projects__project-list__item">
+                    <img class="more-projects__project-list__image" src="assets/images/screenshot-test.png">
+                    <div class="more-projects__project-list__textbox">
+                        <span>
+                            <h2 class="projects__title more-projects__project-list__title">Hillside Estates</h2> 
+                            <a class="more-projects__project-list__link" href="#"><ion-icon name="arrow-forward-sharp"></ion-icon></a>
+                        </span>
+                        <p class="section__text more-projects__project-list__description">This was a simple app to make sure that I eat chocolates on time.</p>
+                        <ul class="projects__tech">
+                            <li>Javascript</li>
+                            <li>CSS</li>
+                            <li>HTML</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="go-to-top">
+                    <ion-icon name="arrow-up-sharp"></ion-icon>
+                </div>
+            </div>
         </section>
+    
         
-        <footer class="section">
+        
+        <footer class="">
             <div class="wrapper flexbox footer">
                 <h2 class="section__title footer__headline">That's it! Now it's your turn to say hi.</h2>
                 <div class="footer__button-wrapper">
@@ -90,9 +180,9 @@
             </div>
             <div class="footer__links">
                 <ul class="footer__social">
-                    <li><a href="/projects/hillside.html">Email</a></li>
-                    <li><a href="#">Github</a></li>
-                    <li>Built and designed by me :)</li>
+                    <!-- <li><a href="/projects/hillside.html">Email</a></li>
+                    <li><a href="#">Github</a></li> -->
+                    <li>Built and designed by me!</li>
                 </ul>
             </div>  
         </footer>
