@@ -2,7 +2,6 @@
 
 class RevealOnScroll {
     constructor() {
-        console.log("started reveal on scroll");
         this.init();
     }
 
@@ -15,7 +14,6 @@ class RevealOnScroll {
             elementsToShow.forEach(function(element) {
                 if (isElementInViewport(element)) {
                     element.classList.add('is-visible');
-                    console.log("It's visible!");
                 } else {
                     element.classList.remove('is-visible');
                 }
