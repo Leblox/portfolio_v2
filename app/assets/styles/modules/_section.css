@@ -1,12 +1,20 @@
 .section {
-    margin: 20rem auto;
+    margin: 10rem auto;
+
+    @mixin atSmall {
+        margin: 20rem auto;
+    }
     
     &__title {
         font-family: 'Playfair Display', serif;
         color: $headerColor;
         font-size: 2rem;
-        
+        margin-left: 0.5rem;
         margin-bottom: 1.5rem;
+
+        @mixin atSmall {
+            margin-left: 0;
+        }
 
     }
 

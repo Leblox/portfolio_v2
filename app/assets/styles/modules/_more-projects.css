@@ -1,11 +1,17 @@
 .more-projects {
     display: block;
+    margin: 2rem 0 7rem 0;
     
-    margin-top: 2rem;
-    margin-bottom: 7rem;
+    @mixin atSmall {
+        margin: 2rem 2rem 7rem 2rem;
+    }
+
+    @mixin atMedium {
+        margin: 2rem auto 7rem auto;
+    }
+    
 
     &__title {
-        flex: 0 1 auto;
         text-align: center;
         
         &-text {
@@ -30,25 +36,41 @@
     &__project-list {
         display: block;     
         
-
         &__item {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 4rem;
-
+            flex-direction: column;
+            margin-bottom: 2rem;
+            
             &:first-of-type {
                 margin-top: 3rem;
+            }
+            
+            @mixin atSmall {
+                flex-direction: row;
+                margin-bottom: 4rem;
             }
         }
 
         &__image {
-            flex: 0 1 auto;
-            margin-right: 5rem;
+            display: none;
 
-            height: 150px;
-            width: auto;
-            background-color: $headerColor;
+            flex: 0 1 auto;
+            /*
+            height: auto;
+            width: 100%;
+            margin-bottom: 1.5rem;
+            
+            */
+
+            @mixin atSmall {
+                display: inline-block;
+                height: 150px;
+                width: auto;
+                margin-right: 2rem;
+                margin-bottom: 0;
+            }
         }
 
         &__textbox {

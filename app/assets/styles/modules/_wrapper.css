@@ -1,6 +1,15 @@
 .wrapper {
     overflow: hidden;
-    max-width: 1010px;
-    margin: 0 auto;
+    margin: 0 2rem 0 2rem;
     
+    
+    &--padding-at-tiny {
+        padding: 0 2rem;
+    }
+
+    @mixin atMedium {
+        margin: 0 auto;
+        max-width: 1010px;
+    }
+
 }

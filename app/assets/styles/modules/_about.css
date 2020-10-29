@@ -1,23 +1,26 @@
 .about {
-    justify-content: center;
-    align-items: flex-start;
     margin-top: 0;
 
+    @mixin atSmall {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &__title {
+        flex: 0 1 auto;
+    }
 
 
     &__text-box {
         flex: 0 1 auto;
-        width: 50%;
-        margin-left: 3rem;
-    }
-
-    &__image {
-        flex: 0 1 auto;
-
-        & img {
-            height: 400px;
-            width: 350px;
-            background-color: blue;
+        
+        @mixin atSmall {
+            width: 50%;
+            margin-left: 3rem;
         }
     }
+
+
 }

@@ -4,28 +4,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"> 
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
-        <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+
 
         <title>Leblox.io /// Lena - Front-End Developer Portfolio</title>
     </head>
     <body>
         <header class="section flexbox header">
             <div class="wrapper header__title show-on-scroll">
-                A design-minded front-end developer,<br> focused on building beautiful websites, interfaces and experiences.
+                <span class="header__title--highlight">A design minded front-end developer,</span> focused on building beautiful websites, interfaces and experiences.
             </div>
         </header>
-        <div class="header__border">
+        <div class="header__border" id="my-story">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path class="header__border_filter" fill-opacity="1" d="M0,160L26.7,154.7C53.3,149,107,139,160,117.3C213.3,96,267,64,320,64C373.3,64,427,96,480,117.3C533.3,139,587,149,640,128C693.3,107,747,53,800,37.3C853.3,21,907,43,960,48C1013.3,53,1067,43,1120,53.3C1173.3,64,1227,96,1280,90.7C1333.3,85,1387,43,1413,21.3L1440,0L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z">
                 </path>
             </svg>
         </div>
-        
-        <section class="wrapper section flexbox about show-on-scroll">
-            <div class="about__image">
+        <section class="wrapper section about show-on-scroll">
+            <div class="about__title">
                 <h2 class="section__title">Who am I?</h2>
             </div>
-            <div class="about__text-box">
+            <div class="wrapper--padding-at-tiny about__text-box">
                 <p class="section__text"> Originally from Sweden, I have spent over a decade managing small, luxury boutique hotels in sunny London before turning towards coding and web development.</p>
                 <p class="section__text">I have always actively saught out and introduced new technology to help improve profitability and efficiency in the properties I managed. I have always been amazed at the elegant problem solving that a good technology can provide. But after many years as the "client", I have also often been frustrated by poor design and the seemingly illogical "road-maps" of my favourite technology partners.</p>
                 <p class="section__text">I love drinking tea from fancy cups and single-origin dark chocolate.</p>
@@ -33,45 +32,81 @@
             </div>
         </section>
 
-        <section class="wrapper section flexbox skills show-on-scroll">
-                <div class="skills__flexchild">
+        <!-- <section class="wrapper section flexbox skills show-on-scroll"> -->
+        <section class="wrapper section skills show-on-scroll">
+                <div class="skills__title">
                     <h2 class="section__title">I work with...</h2>
                 </div>
-                
-                <div class="skills__flexchild">
-                    <ul class="section__text skills__list">
-                        <li>HTML5 & CSS3</li>
-                        <li>Javascript (ES5 & ES6+)</li>
-                        <li>Version control<br>Git & GitHub</li>
-                        <li>Package management<br>npm and pip</li>
-                        <li>Webpack</li>
-                    </ul>
-                </div>
-                <div class="skills__flexchild">
-                    <ul class="section__text skills__list">
-                        <li>Node.JS</li>
-                        <li>jQuery</li>
-                        <li>Lodash</li>
-                        <li>Autoprefixer</li>
-                        <li>SCSS</li>
-                        <li>PostCSS</li>
-                    </ul>
-                </div>
-                <div class="skills__flexchild">
-                    <ul class="section__text skills__list">
-                        <li>C#</li>
-                        <li>Python 3</li>
-                        <li>Flask</li>
-                        <li>mySQL</li>
-                    </ul>
+                <div class="skills__wrapper-grid">
+                    <div class="skills__grid wrapper--padding-at-tiny">
+                        <ul class="skills-a section__text skills__list">
+                            <li>HTML5 & CSS3</li>
+                            <li>Javascript (ES5 & ES6+)</li>
+                            <li>Git & GitHub</li>
+                            <li>npm and pip</li>
+                        </ul>
+                        <ul class="skills-b section__text skills__list">
+                            <li>Webpack</li>
+                            <li>SCSS</li>
+                            <li>Autoprefixer</li>
+                            <li>REST APIs</li>
+                        </ul>
+                        <ul class="skills-c section__text skills__list">
+                            <li>PostCSS</li>
+                            <li>Node.JS</li>
+                            <li>jQuery</li>
+                            <li>Lodash</li>
+                        </ul>
+                        <ul class="skills-d section__text skills__list">
+                            <li>C#</li>
+                            <li>Python 3</li>
+                            <li>Flask</li>
+                            <li>mySQL</li>
+                        </ul>
+                    </div>
                 </div>
         </section>
+
+<!--         
+        <div class="skills__flexchild wrapper--padding-at-tiny">
+            <ul class="section__text skills__list">
+                <li>HTML5 & CSS3</li>
+                <li>Javascript (ES5 & ES6+)</li>
+                <li>Git & GitHub</li>
+                <li>npm and pip</li>
+            </ul>
+        </div>
+        <div class="skills__flexchild">
+            <ul class="section__text skills__list">
+                <li>Webpack</li>
+                <li>SCSS</li>
+                <li>Autoprefixer</li>
+                <li>REST APIs</li>
+            </ul>
+        </div>
+        <div class="skills__flexchild wrapper--padding-at-tiny">
+            <ul class="section__text skills__list">
+                <li>PostCSS</li>
+                <li>Node.JS</li>
+                <li>jQuery</li>
+                <li>Lodash</li>
+            </ul>
+        </div>
+        <div class="skills__flexchild">
+            <ul class="section__text skills__list">
+                <li>C#</li>
+                <li>Python 3</li>
+                <li>Flask</li>
+                <li>mySQL</li>
+            </ul>
+        </div> -->
         
         <section class="wrapper section projects">
-            <h1 class="section__title projects__header show-on-scroll">These are a few of my favourite things...</h1>
+            <h1 class="section__title projects__header show-on-scroll">Selection of projects...</h1>
+
             <div class="projects__item show-on-scroll">
                 <div class="projects__photo-area"><img src="assets/images/screenshot-test.png" alt="Screenshot of the Hillside Estates website"></div>
-                <div class="projects__text-area">
+                <div class="projects__text-area wrapper--padding-at-tiny">
                     <p class="projects__title">Hillside Estates</p>
                     <ul class="projects__tech">
                         <li>Javascript</li>
@@ -84,7 +119,7 @@
 
             <div class="projects__item show-on-scroll">
                 <div class="projects__photo-area projects__photo-area--opposite"><img src="assets/images/screenshot-test.png" alt="Screenshot of the Hillside Estates website"></div>
-                <div class="projects__text-area projects__text-area--opposite">
+                <div class="projects__text-area projects__text-area--opposite wrapper--padding-at-tiny">
                     <p class="projects__title">Hillside Estates</p>
                     <ul class="projects__tech">
                         <li>Javascript</li>
@@ -97,7 +132,7 @@
 
             <div class="projects__item show-on-scroll">
                 <div class="projects__photo-area"><img src="assets/images/screenshot-test.png" alt="Screenshot of the Hillside Estates website"></div>
-                <div class="projects__text-area">
+                <div class="projects__text-area wrapper--padding-at-tiny">
                     <p class="projects__title">Hillside Estates</p>
                     <ul class="projects__tech">
                         <li>Javascript</li>
@@ -119,7 +154,7 @@
             <div class="more-projects__project-list">
                 <div class="more-projects__project-list__item show-on-scroll">
                     <img class="more-projects__project-list__image" src="assets/images/screenshot-test.png">
-                    <div class="more-projects__project-list__textbox">
+                    <div class="more-projects__project-list__textbox wrapper--padding-at-tiny">
                         <span>
                             <h2 class="projects__title more-projects__project-list__title">Hillside Estates</h2> 
                             <a class="more-projects__project-list__link" href="#"><ion-icon name="arrow-forward-sharp"></ion-icon></a>
@@ -134,7 +169,7 @@
                 </div>
                 <div class="more-projects__project-list__item show-on-scroll">
                     <img class="more-projects__project-list__image" src="assets/images/screenshot-test.png">
-                    <div class="more-projects__project-list__textbox">
+                    <div class="more-projects__project-list__textbox wrapper--padding-at-tiny">
                         <span>
                             <h2 class="projects__title more-projects__project-list__title">Hillside Estates</h2> 
                             <a class="more-projects__project-list__link" href="#"><ion-icon name="arrow-forward-sharp"></ion-icon></a>
@@ -149,7 +184,7 @@
                 </div>
                 <div class="more-projects__project-list__item show-on-scroll">
                     <img class="more-projects__project-list__image" src="assets/images/screenshot-test.png">
-                    <div class="more-projects__project-list__textbox">
+                    <div class="more-projects__project-list__textbox wrapper--padding-at-tiny">
                         <span>
                             <h2 class="projects__title more-projects__project-list__title">Hillside Estates</h2> 
                             <a class="more-projects__project-list__link" href="#"><ion-icon name="arrow-forward-sharp"></ion-icon></a>
@@ -164,11 +199,6 @@
                 </div>
             </div>
         </section>
-        <div class="go-to-top">
-            <ion-icon name="arrow-up-sharp"></ion-icon>
-        </div>
-    
-        
         
         <footer class="">
             <div class="wrapper flexbox footer show-on-scroll">
@@ -179,13 +209,19 @@
                 </div>
             </div>
             <div class="footer__links">
-                <ul class="footer__social">
+                <ul class="footer__social wrapper--padding-at-tiny">
                     <!-- <li><a href="/projects/hillside.html">Email</a></li>
                     <li><a href="#">Github</a></li> -->
                     <li>Built and designed by me!</li>
                 </ul>
             </div>  
         </footer>
+        <div class="go-to-top">
+            <a href="#my-story"><ion-icon name="arrow-up-sharp"></a></ion-icon>
+        </div>
+
+
+        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
         <script src="bundled.js"></script>
     </body>
 </html>
