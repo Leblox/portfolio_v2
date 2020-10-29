@@ -1,5 +1,5 @@
 {
-  "name": "portfoliov2",
+  "name": "portfolio2.0",
   "version": "2.0.0",
   "description": "Personal portfolio project v2",
   "author": "leblox",
@@ -13,6 +13,8 @@
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
     "autoprefixer": "^9.8.6",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^4.2.1",
@@ -26,6 +28,7 @@
     "postcss-mixins": "^6.2.3",
     "postcss-nested": "^4.2.3",
     "postcss-simple-vars": "^5.0.2",
+    "source-map-loader": "^1.1.2",
     "style-loader": "^1.2.1",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
