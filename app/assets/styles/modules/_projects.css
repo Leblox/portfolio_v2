@@ -1,51 +1,32 @@
 .projects {
     margin-bottom: 2rem;
-
-    @mixin atMedium {
-        margin-bottom: 10rem;
-    }
+    @mixin atMedium { margin-bottom: 10rem; }
 
     &__header {
-        
         margin-bottom: 4rem;
-
-        @mixin atSmall {
-            text-align: center;
-        }
+        @mixin atSmall { text-align: center; }
     }
    
     /* Each project is a grid, with a flexbox inside the texbox */
 
     &__item {
         margin-bottom: 5rem;
-
         @mixin atMedium {
             display: grid;
             grid-template-columns: repeat(12, 1fr);
             grid-template-rows: 1fr;
-    
             margin-bottom: 15rem;
-    
-            &:last-of-type {
-                margin-bottom: 0;
-            }
-            
-
+            &:last-of-type { margin-bottom: 0; }
         }
-
     }
 
     &__photo-area {
         margin-bottom: 1rem;
-        
-        @mixin atSmall { margin: 0 2rem 1rem 2rem; }
-        
+        @mixin atSmall { margin: 0 2rem 1rem 2rem; }      
         @mixin atMedium { margin: 0; }
-        
-        overflow: hidden;
+                
         grid-column: 1 / 8;
         grid-row: 1;
-        
         &--opposite {
             grid-column: 6 / 13;
         }
@@ -53,21 +34,19 @@
         & img {
             width: 100%;
             height: auto;
-            opacity: 0.6;
-            transition: opacity 0.5s, transform 0.5s;
-            
-        }
-        
-        & img:hover {
-            opacity: 1;
-            transform: scale(1.2);
-
             cursor: pointer;
-        }
+            opacity: 1;
+            transition: opacity 0.5s, transform 0.5s;  
+            
+            &:hover {
+                opacity: 0.7;
+                transform: scale(1.01);                
+            }
+        }       
     }
     
     &__text-area {
-        grid-column: 7 / 13;
+        grid-column: 6 / 13;
         grid-row: 1;
         
         display: flex;
@@ -76,31 +55,27 @@
         justify-content: center;
         
         &--opposite {
-            grid-column: 1 / 7;
+            grid-column: 1 / 8;
             align-items: flex-start;
         }
         
-        & > * {
-            z-index: 10; 
-        }
+        & > * { z-index: 10; }
         
     }
 
     &__title {
         font-family: 'Playfair Display', serif;
-        color: $headerColor;
+        color: $darkerAccent;
         font-size: 1.7rem;
         text-align: right;
         cursor: pointer;
-        
     }
 
     &__text-box {
-        background-color: rgb(241, 240, 240);
-        border-radius: 8px;
+        background-color: #aec2c28a;
+        /* background-color: rgb(241, 240, 240); */
+        border-radius: 4px;
         padding: 1.5rem;  
-        
-        
         text-align: right;
         margin: 0;
 
@@ -117,10 +92,8 @@
         
         & li {
             display: inline-block;
-
-            &:first-of-type {
-                margin-right: 2rem;
-            }
+            margin-right: 2rem;
+            &:last-of-type { margin-right: 0; }
         }
     }
 

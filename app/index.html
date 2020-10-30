@@ -14,13 +14,13 @@
                 <span class="header__title--highlight">A design minded front-end developer,</span> focused on building beautiful websites, interfaces and experiences.
             </div>
         </header>
-        <div class="header__border" id="my-story">
+        <div class="header__border">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path class="header__border_filter" fill-opacity="1" d="M0,160L26.7,154.7C53.3,149,107,139,160,117.3C213.3,96,267,64,320,64C373.3,64,427,96,480,117.3C533.3,139,587,149,640,128C693.3,107,747,53,800,37.3C853.3,21,907,43,960,48C1013.3,53,1067,43,1120,53.3C1173.3,64,1227,96,1280,90.7C1333.3,85,1387,43,1413,21.3L1440,0L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z">
                 </path>
             </svg>
         </div>
-        <section class="wrapper section about show-on-scroll">
+        <section class="wrapper section about show-on-scroll" id="my-story">
             <div class="about__title">
                 <h2 class="section__title">Who am I?</h2>
             </div>
@@ -32,7 +32,6 @@
             </div>
         </section>
 
-        <!-- <section class="wrapper section flexbox skills show-on-scroll"> -->
         <section class="wrapper section skills show-on-scroll">
                 <div class="skills__title">
                     <h2 class="section__title">I work with...</h2>
@@ -66,80 +65,57 @@
                     </div>
                 </div>
         </section>
-
-<!--         
-        <div class="skills__flexchild wrapper--padding-at-tiny">
-            <ul class="section__text skills__list">
-                <li>HTML5 & CSS3</li>
-                <li>Javascript (ES5 & ES6+)</li>
-                <li>Git & GitHub</li>
-                <li>npm and pip</li>
-            </ul>
-        </div>
-        <div class="skills__flexchild">
-            <ul class="section__text skills__list">
-                <li>Webpack</li>
-                <li>SCSS</li>
-                <li>Autoprefixer</li>
-                <li>REST APIs</li>
-            </ul>
-        </div>
-        <div class="skills__flexchild wrapper--padding-at-tiny">
-            <ul class="section__text skills__list">
-                <li>PostCSS</li>
-                <li>Node.JS</li>
-                <li>jQuery</li>
-                <li>Lodash</li>
-            </ul>
-        </div>
-        <div class="skills__flexchild">
-            <ul class="section__text skills__list">
-                <li>C#</li>
-                <li>Python 3</li>
-                <li>Flask</li>
-                <li>mySQL</li>
-            </ul>
-        </div> -->
         
         <section class="wrapper section projects">
-            <h1 class="section__title projects__header show-on-scroll">Selection of projects...</h1>
+            <h1 class="section__title projects__header show-on-scroll">Highlighted projects</h1>
 
             <div class="projects__item show-on-scroll">
-                <div class="projects__photo-area"><img src="assets/images/screenshot-test.png" alt="Screenshot of the Hillside Estates website"></div>
+                <div class="projects__photo-area">
+                    <a href="https://distracted-elion-1d2bc8.netlify.app" target="_blank" rel="noreferrer noopener"><img src="assets/images/hillsideestates-big.png" alt="Screenshot of the Hillside Estates website" ></a>
+                </div>
                 <div class="projects__text-area wrapper--padding-at-tiny">
-                    <p class="projects__title">Hillside Estates</p>
+                    <a href="https://distracted-elion-1d2bc8.netlify.app" target="_blank" rel="noreferrer noopener">
+                    <p class="section__sub-title projects__title">Hillside Estate Agents</p></a>
                     <ul class="projects__tech">
-                        <li>Javascript</li>
-                        <li>lazyloading</li>
+                        <li>Mobile-first</li>
+                        <li>Lazyloading images</li>
                     </ul>
                     <p class="projects__text-box  section__text">A modern website for a modern estate agent, with focus on responsive, clean design. A modern website for a modern estate agent, with focus on responsive, clean design.</p>
-                    <button class="btn projects__button">More details</button>
+                    <button class="btn projects__button"><a href="https://distracted-elion-1d2bc8.netlify.app" target="_blank" rel="noreferrer noopener">View site</a></button>
                 </div>
             </div>
 
             <div class="projects__item show-on-scroll">
-                <div class="projects__photo-area projects__photo-area--opposite"><img src="assets/images/screenshot-test.png" alt="Screenshot of the Hillside Estates website"></div>
+                <div class="projects__photo-area projects__photo-area--opposite">
+                    <a href="https://thirsty-mcclintock-60e042.netlify.app" target="_blank" rel="noreferrer noopener"><img src="assets/images/ClearviewEscapes-big.png" alt="Screenshot of the ClearView travel agency's website"></a>
+                </div>
                 <div class="projects__text-area projects__text-area--opposite wrapper--padding-at-tiny">
-                    <p class="projects__title">Hillside Estates</p>
+                    <a href="https://thirsty-mcclintock-60e042.netlify.app" target="_blank" rel="noreferrer noopener">
+                    <p class="section__sub-title projects__title">ClearView Travel Agency</p></a>
                     <ul class="projects__tech">
+                        <li>Mobile-first</li>
                         <li>Javascript</li>
                         <li>lazyloading</li>
                     </ul>
                     <p class="projects__text-box projects__text-box--opposite section__text">A modern website for a modern estate agent, with focus on responsive, clean design. A modern website for a modern estate agent, with focus on responsive, clean design.</p>
-                    <button class="btn projects__button">More details</button>
+                    <button class="btn projects__button"><a href="https://thirsty-mcclintock-60e042.netlify.app" target="_blank" rel="noreferrer noopener">View site</a></button>
                 </div>
             </div>
 
             <div class="projects__item show-on-scroll">
-                <div class="projects__photo-area"><img src="assets/images/screenshot-test.png" alt="Screenshot of the Hillside Estates website"></div>
+                <div class="projects__photo-area">
+                    <a href="https://admiring-kilby-cd5705.netlify.app/" target="_blank" rel="noreferrer noopener"><img src="assets/images/forkify-big.png" alt="Screenshot of the forkify app" ></a>
+                </div>
                 <div class="projects__text-area wrapper--padding-at-tiny">
-                    <p class="projects__title">Hillside Estates</p>
+                    <a href="https://admiring-kilby-cd5705.netlify.app/" target="_blank" rel="noreferrer noopener">
+                    <p class="section__sub-title projects__title">Forkify Recipe Finder</p></a>
                     <ul class="projects__tech">
+                        <li>Axios</li>
+                        <li>API</li>
                         <li>Javascript</li>
-                        <li>lazyloading</li>
                     </ul>
-                    <p class="projects__text-box  section__text">A modern website for a modern estate agent, with focus on responsive, clean design. A modern website for a modern estate agent, with focus on responsive, clean design.</p>
-                    <button class="btn projects__button">More details</button>
+                    <p class="projects__text-box  section__text">A web application coded as part of a Udemy course. It utilizes Axios to interact with the Food2Fork API, working with Promises.</p>
+                    <button class="btn projects__button"><a href="https://admiring-kilby-cd5705.netlify.app/" target="_blank" rel="noreferrer noopener">View site</a></button>
                 </div>
             </div>
         </section>
@@ -200,8 +176,8 @@
             </div>
         </section>
         
-        <footer class="">
-            <div class="wrapper flexbox footer show-on-scroll">
+        <footer class="show-on-scroll">
+            <div class="flexbox footer wrapper">
                 <h2 class="section__title footer__headline">That's it! Now it's your turn to say hi.</h2>
                 <div class="footer__button-wrapper">
                     <button class="btn footer__button">Email</button>
@@ -210,17 +186,15 @@
             </div>
             <div class="footer__links">
                 <ul class="footer__social wrapper--padding-at-tiny">
-                    <!-- <li><a href="/projects/hillside.html">Email</a></li>
-                    <li><a href="#">Github</a></li> -->
                     <li>Built and designed by me!</li>
                 </ul>
-            </div>  
+            </div>
         </footer>
+
         <div class="go-to-top">
             <a href="#my-story"><ion-icon name="arrow-up-sharp"></a></ion-icon>
         </div>
-
-
+        
         <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     </body>
 </html>

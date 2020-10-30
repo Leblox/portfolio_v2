@@ -27,9 +27,10 @@
     &__links {
         opacity: 0.3;
         border-top: 2px solid $headerColor;
+        
         margin-top: 2rem;
-
         height: 80px; 
+
         &:hover {
             opacity: 1;
         }

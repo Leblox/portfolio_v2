@@ -2,14 +2,12 @@
     overflow: hidden;
     margin: 0 2rem 0 2rem;
     
-    
-    &--padding-at-tiny {
-        padding: 0 2rem;
-    }
-
     @mixin atMedium {
         margin: 0 auto;
         max-width: 1010px;
     }
-
+    
+    &--padding-at-tiny {
+        padding: 0 2rem;
+    }
 }

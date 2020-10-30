@@ -3,7 +3,6 @@
 @import "base/_global";
 @import "base/_variables";
 @import "modules/_btn";
-@import "modules/_reveal-item";
 @import "modules/_show-on-scroll";
 @import "modules/_flexbox";
 @import "modules/_wrapper";

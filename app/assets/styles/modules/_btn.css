@@ -1,5 +1,29 @@
 .btn {
     text-decoration: none;
+    border: 0;
+    border-radius: 4px;
+    background-color: $buttonColor;
+    color: $mainColor;
+    font-size: 0.9rem;
+    padding: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: color 0.5s, background-color 0.5s;
+
+    z-index: 10;
+
+    &:hover {
+        background-color: $buttonHover;
+        
+        color: $mainColor;
+       
+    }
+}
+
+
+
+/*
+    text-decoration: none;
     border: 3px solid $headerColor;
     background-color: $mainColor;
     color: $headerColor;
@@ -16,4 +40,4 @@
         color: $mainColor;
         font-weight: 500;
     }
-}
+*/

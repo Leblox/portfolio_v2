@@ -24,9 +24,7 @@
         
         @mixin atMedium {
             font-size: 3rem;
-            margin-bottom: 0;
-            
-            
+            margin-bottom: 0;    
         }
     }
 

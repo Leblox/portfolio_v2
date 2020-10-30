@@ -8,14 +8,18 @@
     &__title {
         font-family: 'Playfair Display', serif;
         color: $headerColor;
-        font-size: 2rem;
+        font-size: 2.2rem;
+        font-weight: 900;
         margin-left: 0.5rem;
         margin-bottom: 1.5rem;
 
         @mixin atSmall {
             margin-left: 0;
         }
+    }
 
+    &__subtitle {
+        color: $headerColor;
     }
 
     &__text {
