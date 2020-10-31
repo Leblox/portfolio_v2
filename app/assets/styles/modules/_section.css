@@ -19,7 +19,10 @@
     }
 
     &__subtitle {
+        font-family: 'Playfair Display', serif;
         color: $headerColor;
+        font-size: 1.7rem;
+        font-weight: 700;
     }
 
     &__text {

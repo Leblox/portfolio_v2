@@ -64,9 +64,6 @@
     }
 
     &__title {
-        font-family: 'Playfair Display', serif;
-        color: $darkerAccent;
-        font-size: 1.7rem;
         text-align: right;
         cursor: pointer;
     }
