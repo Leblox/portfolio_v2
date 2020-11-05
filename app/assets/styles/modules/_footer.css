@@ -7,12 +7,16 @@
         width: 90%;
         margin: auto;
         color: $headerColor;
-        font-size: 4rem;
+        font-size: 2.5rem;
         font-weight: 800;
         text-align: center;
 
         @mixin atSmall {
-            font-size: 6rem;
+            font-size: 3rem;
+        }
+
+        @mixin atMedium {
+            font-size: 4rem;
         }
     }
 

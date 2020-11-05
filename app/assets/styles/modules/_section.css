@@ -13,6 +13,10 @@
         margin-left: 0.5rem;
         margin-bottom: 1.5rem;
 
+        &--highlight {
+            color: $darkerAccent;
+        }
+
         @mixin atSmall {
             margin-left: 0;
         }
@@ -28,5 +32,12 @@
     &__text {
         line-height: 140%;
         margin-bottom: 1rem;
+        text-align: justify;
+
+        &__highlight {
+            font-weight: 700;
+            color: $darkerAccent;
+        }
     }
+
 }

@@ -17,7 +17,7 @@
         flex: 0 1 auto;
         
         @mixin atSmall {
-            width: 50%;
+            width: 60%;
             margin-left: 3rem;
         }
     }
