@@ -1,5 +1,5 @@
 .about {
-    margin-top: 0;
+    
 
     @mixin atSmall {
         display: flex;
@@ -8,17 +8,38 @@
         align-items: flex-start;
     }
 
-    &__title {
-        flex: 0 1 auto;
+    &__header {
+        @mixin atSmall {
+            flex: 0 1 auto;
+        }
     }
 
 
     &__text-box {
-        flex: 0 1 auto;
         
         @mixin atSmall {
+            flex: 0 1 auto;
             width: 60%;
             margin-left: 3rem;
+        }
+    }
+
+    &__photo {
+        height: 15rem;
+        width: 15rem;
+        right: 50%;
+        transform: translateX(50%);
+        border-radius: 50%;
+        overflow: hidden;
+        border: 3px solid $headerColor;
+        margin-bottom: 1.5rem;
+
+        @mixin atSmall {
+            height: 10rem;
+            width: 10rem;
+            right: 0%;
+            transform: none;
+            margin-top: 1rem;
         }
     }
 
