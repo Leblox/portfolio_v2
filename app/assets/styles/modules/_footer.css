@@ -20,12 +20,31 @@
         }
     }
 
-    &__button-wrapper {
+    &__contact-wrapper {
         margin-top: 2rem;
+    }
+
+    &__contact {
+        display: block;
+        width: 16rem;
+        height: auto;
+        margin: auto;
     }
     &__button {
         margin: auto;
         text-align: center;
+        font-size: 3rem;
+        padding: 0;
+        transition: color 0.5s, background-color 0.5s;
+        border-radius: 50%;
+        overflow: hidden;
+
+        &:hover {
+            background-color: $buttonHover;
+            
+            color: $mainColor;
+           
+        }
     }
 
     &__links {
